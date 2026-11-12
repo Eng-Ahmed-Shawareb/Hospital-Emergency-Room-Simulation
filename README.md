@@ -2,6 +2,8 @@
 
 An **Operating Systems course project** written in Java that simulates a hospital emergency room using multithreading and synchronization. The project demonstrates the **Producer–Consumer problem** with a **Bounded Buffer**, using custom semaphores to coordinate patient arrivals, doctors, and the limited treatment rooms.
 
+![Hospital Emergency Room Overview](class_diagram/overview.png)
+
 ## Project Overview
 
 Patients arrive concurrently and try to enter a waiting room with a user-defined capacity. Doctors run concurrently, wait for available patients, and attempt to acquire one of the hospital's two treatment rooms. If a doctor cannot acquire a room within three seconds, the patient is returned to the waiting room. Otherwise, the doctor treats the patient for a random duration.
